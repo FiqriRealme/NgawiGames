@@ -1,0 +1,172 @@
+
+
+body {
+  background-color: #0d0d0d;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  background-color: #1f1f1f;
+  padding: 15px;
+}
+
+.navbar .navbar-brand {
+  text-decoration: none;   
+  color: #ffcc00;          
+  font-weight: bold;
+
+}
+
+.navbar .cart,
+.navbar .btn-outline-light {
+  color: #fff !important;  
+  border-color: #fff; 
+  text-decoration: none;     
+}
+
+
+.cart-container {
+  display: flex;
+  gap: 30px;
+  padding: 30px;
+}
+
+
+.cart-items {
+  flex: 2;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #2a2a2a;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.cart-item img {
+  width: 100px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 15px;
+}
+
+.cart-item-info {
+  flex: 1;
+}
+
+.cart-item-info h5 {
+  margin: 0;
+  font-size: 1rem;
+  color: #ffcc00;
+}
+
+.cart-item-info p {
+  margin: 5px 0;
+}
+
+.cart-item .qty {
+  margin-left: 15px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.cart-item .remove-btn {
+  background-color: #dc3545;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+.cart-item .remove-btn:hover {
+  background-color: #c82333;
+}
+
+/* Bagian kanan: ringkasan order */
+.order-summary {
+  flex: 1;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.order-summary h4 {
+  margin-bottom: 20px;
+  color: #ffcc00;
+}
+
+.order-summary p {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.order-summary .total {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+.order-summary .checkout-btn {
+  display: block;
+  width: 100%;
+  background-color: #ffcc00;
+  color: #000;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.order-summary .checkout-btn:hover {
+  background-color: #ffaa00;
+}
+
+.checkout-btn {
+  display: block;
+  width: 100%;
+  background-color: #ffcc00;
+  color: #000;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.checkout-btn:hover {
+  background-color: #ffaa00;
+}
+
+.order-summary .belanja-btn {
+    text-decoration: none;
+  display: block;
+  width: 100%;
+  background-color: #ffffff; 
+  color: #000;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px; 
+}
+
+.order-summary .belanja-btn:hover {
+  background-color: #ffffff; 
+}

@@ -1,0 +1,145 @@
+
+body {
+  background-color: #0d0d0d;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+}
+
+
+.navbar {
+  background-color: #1f1f1f;
+  padding: 15px;
+}
+
+.logo {
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.search-form {
+  margin-right: 20px;
+}
+
+.search-input {
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: none;
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+.search-input::placeholder {
+  color: #aaa;
+}
+
+/* Menu */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  color: #ffcc00;
+}
+
+.nav-menu li a.active {
+  border-bottom: 2px solid #ffcc00;
+  padding-bottom: 2px;
+  color: #ffcc00;
+}
+
+/* Judul pencarian */
+.search-title {
+  color: #ffcc00;
+  margin: 20px;
+  font-size: 1.4rem;
+}
+
+/* Grid hasil pencarian */
+.search-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Card game */
+.card {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.card-img-top {
+  width: 100%;
+  aspect-ratio: 16/9;   /* seragam rasio */
+  object-fit: cover;    /* crop biar rapi */
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  color: #ffcc00;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  margin-bottom: 10px;
+}
+
+/* Tombol */
+.btn-warning {
+  background-color: #ffcc00;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-warning:hover {
+  background-color: #ffaa00;
+  color: #000;
+}
+
+/* Pesan tidak ada hasil */
+.no-result {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.2rem;
+  color: #ffcc00;
+}
