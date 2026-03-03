@@ -4,8 +4,10 @@ class Game {
     private $table_name = "games";
 
     public $id;
-    public $title;
-    public $price;
+    public $judul;
+    public $harga;
+    public $genre;
+    public $deskripsi;
 
     public function __construct($db) {
         $this->conn = $db;
@@ -19,15 +21,15 @@ class Game {
     }
 
     public function create() {
-        $query = "INSERT INTO " . $this->table_name . " (title, price) VALUES (?, ?)";
+        $query = "INSERT INTO " . $this->table_name . " (judul, harga, genre, deskripsi) VALUES (?, ?, ?, ?)";
         $stmt = $this->conn->prepare($query);
-        return $stmt->execute([$this->title, $this->price]);
+        return $stmt->execute([$this->judul, $this->harga, $this->genre, $this->deskripsi]);
     }
 
     public function update() {
-        $query = "UPDATE " . $this->table_name . " SET title = ?, price = ? WHERE id = ?";
+        $query = "UPDATE " . $this->table_name . " SET judul = ?, harga = ?, genre = ?, deskripsi = ? WHERE id = ?";
         $stmt = $this->conn->prepare($query);
-        return $stmt->execute([$this->title, $this->price, $this->id]);
+        return $stmt->execute([$this->judul, $this->harga, $this->genre, $this->deskripsi, $this->id]);
     }
 
     public function delete() {

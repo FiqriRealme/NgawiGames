@@ -1,7 +1,7 @@
 <?php
 header("Content-Type: application/json; charset=UTF-8");
-include_once '../config/Database.php';
-include_once '../models/Game.php';
+include_once "../config/database.php";
+include_once "../models/game.php";
 
 $database = new Database();
 $db = $database->getConnection();
@@ -15,11 +15,14 @@ if($num > 0) {
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
         extract($row);
         $games_arr[] = [
-    "id" => $id,
-    "title" => $judul,
-    "price" => $harga
-];
+            "id" => $id,
+            "judul" => $judul,
+            "harga" => $harga,
+            "genre" => $genre,
+            "deskripsi" => $deskripsi
+        ];
     }
+
     http_response_code(200);
     echo json_encode($games_arr);
 } else {
